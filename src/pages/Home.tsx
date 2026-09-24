@@ -12,7 +12,7 @@ import Footer from "../Components/footer";
 import { Link } from "react-router-dom";
 
 import {
-   
+
     Settings,
     ChartNoAxesCombined,
     Box,
@@ -162,84 +162,78 @@ const Home = () => {
             md:hidden
         "
                 />
-
-
                 {/* =====================================================
         HERO CONTENT
     ===================================================== */}
                 <div
                     className="
-            relative
-            z-20
-            mx-auto
-            h-full
-            max-w-[1440px]
-        "
+        relative
+        z-20
+        mx-auto
+        h-full
+        max-w-[1440px]
+    "
                 >
                     <div
                         className="
-                absolute
-                left-0
-                top-0
-                w-full
-                px-5
-                top-[60px]
+            absolute
+            left-[20px]
+            top-[60px]
+            z-20
+            w-[calc(100%-40px)]
 
-                sm:px-8
-                sm:pt-[55px]
+            sm:left-[32px]
+            sm:top-[55px]
+            sm:w-[calc(100%-64px)]
 
-                md:left-[50px]
-                md:top-1/2
-                md:w-[40%]
-                md:-translate-y-1/2
-                md:px-0
-                md:pt-0
+            md:left-[50px]
+            md:top-1/2
+            md:w-[40%]
+            md:-translate-y-1/2
+            md:px-0
+            md:pt-0
 
-                lg:left-[40px]
-            "
+            lg:left-[40px]
+        "
                     >
 
-                        {/* =================================================
-                TOP LABEL
-            ================================================= */}
+                        {/* TOP LABEL */}
                         <p
                             className="
-                    mb-3
-                    text-[9px]
-                    font-bold
-                    tracking-[0.10em]
-                    text-[#E9A91F]
+                mb-3
+                text-[9px]
+                font-bold
+                tracking-[0.10em]
+                text-[#E9A91F]
 
-                    sm:text-[10px]
+                sm:text-[10px]
 
-                    md:text-[12px]
-                    md:tracking-[0.12em]
+                md:text-[12px]
+                md:tracking-[0.12em]
 
-                    lg:text-[12px]
-                "
+                lg:text-[12px]
+            "
                         >
                             TRUSTED PARTNER&nbsp;&nbsp; | &nbsp;&nbsp;
                             INNOVATION&nbsp;&nbsp; | &nbsp;&nbsp;
                             EXCELLENCE
                         </p>
 
-
-                        {/* =================================================
-                HEADING
-            ================================================= */}
+                        {/* HEADING */}
                         <h1
                             className="
-                    text-[28px]
-                    font-bold
-                    leading-[1.08]
-                    text-white
+                text-[28px]
+                font-bold
+                leading-[1.08]
+                text-white
 
-                    sm:text-[34px]
+                sm:text-[34px]
 
-                    md:text-[44px]
+                md:text-[44px]
 
-                    lg:text-[50px]
-                "
+                lg:text-[50px]
+                -translate-x-[6px]
+            "
                         >
                             Turning Ideas into
 
@@ -248,24 +242,21 @@ const Home = () => {
                             </span>
                         </h1>
 
-
-                        {/* =================================================
-                DESCRIPTION
-            ================================================= */}
+                        {/* DESCRIPTION */}
                         <p
                             className="
-                    mt-3
-                    max-w-[500px]
-                    text-[11px]
-                    leading-[1.4rem]
-                    text-white/85
+                mt-3
+                max-w-[500px]
+                text-[11px]
+                leading-[1.4rem]
+                text-white/85
 
-                    sm:text-[12px]
+                sm:text-[12px]
 
-                    md:mt-4
-                    md:text-[14px]
-                    md:leading-[1.5rem]
-                "
+                md:mt-4
+                md:text-[14px]
+                md:leading-[1.5rem]
+            "
                         >
                             Kandha Engineering Tech Solutions (KETS) offers
                             high-quality, reliable, and sustainable testing
@@ -273,35 +264,32 @@ const Home = () => {
                             and other industries across the globe.
                         </p>
 
-
-                        {/* =================================================
-                BUTTON
-            ================================================= */}
+                        {/* BUTTON */}
                         <div className="relative top-5 mt-5 md:mt-6">
                             <Link
                                 to="/solutions"
                                 className="
-                        inline-flex
-                        h-[42px]
-                        min-w-[175px]
-                        items-center
-                        justify-center
-                        gap-3
-                        rounded-full
-                        bg-[#E9A91F]
-                        px-5
-                        text-[12px]
-                        font-bold
-                        text-white
-                        transition-all
+                    inline-flex
+                    h-[42px]
+                    min-w-[175px]
+                    items-center
+                    justify-center
+                    gap-3
+                    rounded-full
+                    bg-[#E9A91F]
+                    px-5
+                    text-[12px]
+                    font-bold
+                    text-white
+                    transition-all
 
-                        md:h-[46px]
-                        md:min-w-[185px]
-                        md:px-6
-                        md:text-[13px]
+                    md:h-[46px]
+                    md:min-w-[185px]
+                    md:px-6
+                    md:text-[13px]
 
-                        md:hover:bg-[#D9960F]
-                    "
+                    md:hover:bg-[#D9960F]
+                "
                             >
                                 Explore Our Solutions
 
@@ -318,246 +306,325 @@ const Home = () => {
 
 
             {/* =========================================================
-                SERVICES STRIP
-            ========================================================= */}
+    SERVICES STRIP
+========================================================= */}
             <section
                 className="
-                    w-full
-                    border-b
-                    border-[#d7eaf3]
-                    bg-[#eef9fd]
-                    px-3
-                    py-4
-
-                    sm:px-6
-                    sm:py-5
-
-                    lg:px-8
-                "
+        w-full
+        border-b
+        border-[#d7eaf3]
+        bg-[#eef9fd]
+        py-0
+    "
             >
-                <div className="mx-auto max-w-[1440px]">
+                <div className="w-full">
 
                     <div
                         className="
-                            grid
-                            grid-cols-2
-                            overflow-hidden
-                            rounded-xl
-                            border
-                            border-[#d7eaf3]
-                            bg-white
-                            shadow-sm
+                grid
+                w-full
+                grid-cols-2
+                border-t
+                border-[#d7eaf3]
+                bg-white
 
-                            sm:grid-cols-4
-                            lg:grid-cols-7
-                        "
+                sm:grid-cols-4
+
+                lg:grid-cols-7
+            "
                     >
 
-                        {/* 1 */}
+                        {/* =====================================================
+                1. DESIGN & ENGINEERING
+            ===================================================== */}
                         <div
                             className="
-                                flex
-                                min-h-[100px]
-                                flex-col
-                                items-center
-                                justify-center
-                                border-b
-                                border-[#d7eaf3]
-                                px-2
-                                py-4
-                                text-center
+                    flex
+                    min-h-[100px]
+                    w-full
+                    flex-col
+                    items-center
+                    justify-center
+                    border-b
+                    border-r
+                    border-[#d7eaf3]
+                    px-3
+                    py-4
+                    text-center
 
-                                lg:border-b-0
-                                lg:border-r
-                            "
+                    sm:border-b-0
+                "
                         >
                             <Settings
                                 size={32}
                                 strokeWidth={1.8}
-                                className="mb-2 text-[#063968]"
+                                className="mb-2 shrink-0 text-[#063968]"
                             />
 
-                            <p className="text-[11px] font-semibold leading-[1.25] text-[#063968] sm:text-[13px]">
-                                Design &<br />
+                            <p
+                                className="
+                        text-[11px]
+                        font-semibold
+                        leading-[1.25]
+                        text-[#063968]
+                        sm:text-[13px]
+                    "
+                            >
+                                Design &amp;
+                                <br />
                                 Engineering
                             </p>
                         </div>
 
-                        {/* 2 */}
+
+                        {/* =====================================================
+                2. DATA ANALYSIS
+            ===================================================== */}
                         <div
                             className="
-                                flex
-                                min-h-[100px]
-                                flex-col
-                                items-center
-                                justify-center
-                                border-b
-                                border-[#d7eaf3]
-                                px-2
-                                py-4
-                                text-center
+                    flex
+                    min-h-[100px]
+                    w-full
+                    flex-col
+                    items-center
+                    justify-center
+                    border-b
+                    border-r
+                    border-[#d7eaf3]
+                    px-3
+                    py-4
+                    text-center
 
-                                lg:border-b-0
-                                lg:border-r
-                            "
+                    sm:border-b-0
+                "
                         >
                             <ChartNoAxesCombined
                                 size={32}
                                 strokeWidth={1.8}
-                                className="mb-2 text-[#063968]"
+                                className="mb-2 shrink-0 text-[#063968]"
                             />
 
-                            <p className="text-[11px] font-semibold leading-[1.25] text-[#063968] sm:text-[13px]">
+                            <p
+                                className="
+                        text-[11px]
+                        font-semibold
+                        leading-[1.25]
+                        text-[#063968]
+                        sm:text-[13px]
+                    "
+                            >
                                 Data
                                 <br />
                                 Analysis
                             </p>
                         </div>
 
-                        {/* 3 */}
+
+                        {/* =====================================================
+                3. PROTOTYPING & BUILD
+            ===================================================== */}
                         <div
                             className="
-                                flex
-                                min-h-[100px]
-                                flex-col
-                                items-center
-                                justify-center
-                                border-b
-                                border-[#d7eaf3]
-                                px-2
-                                py-4
-                                text-center
+                    flex
+                    min-h-[100px]
+                    w-full
+                    flex-col
+                    items-center
+                    justify-center
+                    border-b
+                    border-r
+                    border-[#d7eaf3]
+                    px-3
+                    py-4
+                    text-center
 
-                                lg:border-b-0
-                                lg:border-r
-                            "
+                    sm:border-b-0
+                "
                         >
                             <Box
                                 size={32}
                                 strokeWidth={1.8}
-                                className="mb-2 text-[#063968]"
+                                className="mb-2 shrink-0 text-[#063968]"
                             />
 
-                            <p className="text-[11px] font-semibold leading-[1.25] text-[#063968] sm:text-[13px]">
+                            <p
+                                className="
+                        text-[11px]
+                        font-semibold
+                        leading-[1.25]
+                        text-[#063968]
+                        sm:text-[13px]
+                    "
+                            >
                                 Prototyping
                                 <br />
-                                & Build
+                                &amp; Build
                             </p>
                         </div>
 
-                        {/* 4 */}
+
+                        {/* =====================================================
+                4. CERTIFICATION & COMPLIANCE
+            ===================================================== */}
                         <div
                             className="
-                                flex
-                                min-h-[100px]
-                                flex-col
-                                items-center
-                                justify-center
-                                border-b
-                                border-[#d7eaf3]
-                                px-2
-                                py-4
-                                text-center
+                    flex
+                    min-h-[100px]
+                    w-full
+                    flex-col
+                    items-center
+                    justify-center
+                    border-b
+                    border-r
+                    border-[#d7eaf3]
+                    px-3
+                    py-4
+                    text-center
 
-                                lg:border-b-0
-                                lg:border-r
-                            "
+                    sm:border-b-0
+                "
                         >
                             <BadgeCheck
                                 size={32}
                                 strokeWidth={1.8}
-                                className="mb-2 text-[#063968]"
+                                className="mb-2 shrink-0 text-[#063968]"
                             />
 
-                            <p className="text-[11px] font-semibold leading-[1.25] text-[#063968] sm:text-[13px]">
-                                Certification &
+                            <p
+                                className="
+                        text-[11px]
+                        font-semibold
+                        leading-[1.25]
+                        text-[#063968]
+                        sm:text-[13px]
+                    "
+                            >
+                                Certification &amp;
                                 <br />
                                 Compliance
                             </p>
                         </div>
 
-                        {/* 5 */}
+
+                        {/* =====================================================
+                5. TESTING & VALIDATION
+            ===================================================== */}
                         <div
                             className="
-                                flex
-                                min-h-[100px]
-                                flex-col
-                                items-center
-                                justify-center
-                                border-b
-                                border-[#d7eaf3]
-                                px-2
-                                py-4
-                                text-center
+                    flex
+                    min-h-[100px]
+                    w-full
+                    flex-col
+                    items-center
+                    justify-center
+                    border-b
+                    border-r
+                    border-[#d7eaf3]
+                    px-3
+                    py-4
+                    text-center
 
-                                sm:border-r
-                                lg:border-b-0
-                            "
+                    sm:border-b-0
+                "
                         >
                             <Megaphone
                                 size={32}
                                 strokeWidth={1.8}
-                                className="mb-2 text-[#063968]"
+                                className="mb-2 shrink-0 text-[#063968]"
                             />
 
-                            <p className="text-[11px] font-semibold leading-[1.25] text-[#063968] sm:text-[13px]">
-                                Testing &
+                            <p
+                                className="
+                        text-[11px]
+                        font-semibold
+                        leading-[1.25]
+                        text-[#063968]
+                        sm:text-[13px]
+                    "
+                            >
+                                Testing &amp;
                                 <br />
                                 Validation
                             </p>
                         </div>
 
-                        {/* 6 */}
+
+                        {/* =====================================================
+                6. AFTER SALES SUPPORT
+            ===================================================== */}
                         <div
                             className="
-                                flex
-                                min-h-[100px]
-                                flex-col
-                                items-center
-                                justify-center
-                                border-b
-                                border-[#d7eaf3]
-                                px-2
-                                py-4
-                                text-center
+                    flex
+                    min-h-[100px]
+                    w-full
+                    flex-col
+                    items-center
+                    justify-center
+                    border-b
+                    border-r
+                    border-[#d7eaf3]
+                    px-3
+                    py-4
+                    text-center
 
-                                lg:border-b-0
-                                lg:border-r
-                            "
+                    sm:border-b-0
+                "
                         >
                             <Wrench
                                 size={32}
                                 strokeWidth={1.8}
-                                className="mb-2 text-[#063968]"
+                                className="mb-2 shrink-0 text-[#063968]"
                             />
 
-                            <p className="text-[11px] font-semibold leading-[1.25] text-[#063968] sm:text-[13px]">
+                            <p
+                                className="
+                        text-[11px]
+                        font-semibold
+                        leading-[1.25]
+                        text-[#063968]
+                        sm:text-[13px]
+                    "
+                            >
                                 After Sales Support
                                 <br />
-                                & Lifecycle Services
+                                &amp; Lifecycle Services
                             </p>
                         </div>
 
-                        {/* 7 */}
+
+                        {/* =====================================================
+                7. MAINTENANCE SERVICES
+            ===================================================== */}
                         <div
                             className="
-                                flex
-                                min-h-[100px]
-                                flex-col
-                                items-center
-                                justify-center
-                                px-2
-                                py-4
-                                text-center
-                            "
+                    flex
+                    min-h-[100px]
+                    w-full
+                    flex-col
+                    items-center
+                    justify-center
+                    border-b
+                    border-[#d7eaf3]
+                    px-3
+                    py-4
+                    text-center
+                "
                         >
                             <SearchCheck
                                 size={32}
                                 strokeWidth={1.8}
-                                className="mb-2 text-[#063968]"
+                                className="mb-2 shrink-0 text-[#063968]"
                             />
 
-                            <p className="text-[11px] font-semibold leading-[1.25] text-[#063968] sm:text-[13px]">
+                            <p
+                                className="
+                        text-[11px]
+                        font-semibold
+                        leading-[1.25]
+                        text-[#063968]
+                        sm:text-[13px]
+                    "
+                            >
                                 Maintenance
                                 <br />
                                 Services
@@ -568,7 +635,6 @@ const Home = () => {
                 </div>
             </section>
 
-
             {/* GAP */}
             <div className="h-[10px] w-full bg-gray-200 sm:h-[15px]" />
 
@@ -578,192 +644,74 @@ const Home = () => {
     OUR EXPERTISE
 ========================================================= */}
             <section className="relative w-full overflow-hidden bg-white">
-                <div
-                    className="
-            relative
-            top-2
-            mx-auto
-            max-w-[1440px]
-
-            lg:min-h-[300px]
-        "
-                >
-
-                    {/* =====================================================
-            LEFT CONTENT
-        ===================================================== */}
+                <div className=" relative mx-auto w-full  lg:min-h-[330px] " >
+                    {/* ===================================================== LEFT CONTENT ===================================================== */}
                     <div
                         className="
-                relative
-                z-30
-                w-full
-                px-5
-                pt-8
-                pb-10
+    relative
+    z-30
 
-                sm:px-8
-                sm:pt-9
-                sm:pb-12
+    left-[20px]
+    w-[calc(100%-40px)]
 
-                lg:flex
-                lg:min-h-[300px]
-                lg:w-[48%]
-                lg:items-center
-                lg:px-0
-                lg:py-8
-                lg:pb-8
-            "
+    pt-10
+    pb-14
+
+    sm:left-[32px]
+    sm:w-[calc(100%-64px)]
+    sm:pt-10
+    sm:pb-14
+
+    lg:static
+    lg:left-auto
+    lg:w-[48%]
+    lg:min-h-[330px]
+    lg:px-0
+    lg:py-8
+    lg:pb-8
+  "
                     >
                         <div
                             className="
-                    w-full
-                    translate-x-0
-                    pr-0
+            w-full
+            translate-x-0
+            pr-2
 
-                    lg:translate-x-[40px]
-                    lg:pr-8
-                "
+            sm:translate-x-0
+            sm:pr-2
+
+            lg:translate-x-[40px]
+            lg:pr-8
+        "
                         >
-
-                            {/* =================================================
-                    LABEL
-                ================================================= */}
-                            <p
-                                className="
-                        text-[12px]
-                        font-bold
-                        leading-none
-                        tracking-[0.12em]
-                        text-[#E9A91F]
-
-                        sm:text-[15px]
-                    "
-                            >
+                            {/* ================================================= LABEL ================================================= */}
+                            <p className=" text-[12px] font-bold leading-none tracking-[0.12em] text-[#E9A91F] sm:text-[15px] translate-y-2" >
                                 OUR EXPERTISE
                             </p>
                             {/* MOBILE / TABLET GAP */}
-                            <div
-                                className="
-        h-[12px]
-        sm:h-[14px]
-        lg:hidden
-    "
-                            />
-
-
-                            {/* =================================================
-                    HEADING
-                ================================================= */}
-                            <h2
-                                className="
-                        
-                        text-[25px]
-                        font-bold
-                        leading-[1.15]
-                        text-[#063968]
-
-                        sm:mt-5
-                        sm:text-[30px]
-
-                        md:text-[36px]
-
-                        lg:mt-[14px]
-                        lg:text-[40px]
-                    "
-                            >
-                                <span className="block">
-                                    Your Engineering &amp; Technology
-                                </span>
-
-                                <span className="mt-2 block">
-                                    Consulting Partner
-                                </span>
+                            <div className=" h-[12px] sm:h-[14px] lg:hidden " />
+                            {/* ================================================= HEADING ================================================= */}
+                            <h2 className=" mt-0 text-[25px] font-bold leading-[1.15] text-[#063968] sm:text-[30px] md:text-[36px] lg:translate-y-[12px] lg:text-[40px] " >
+                                <span className="block"> Your Engineering &amp; Technology </span>
+                                <span className="mt-2 block"> Consulting Partner </span>
                             </h2>
-
-
-                            {/* =================================================
-                    DESCRIPTION
-                ================================================= */}
-                            <p
-                                className="
-                        mt-6
-                        max-w-[500px]
-                        text-[11px]
-                        leading-[1.5rem]
-                        text-[#17466f]
-
-                        sm:mt-6
-                        sm:text-[12px]
-
-                        md:text-[13px]
-
-                        lg:mt-6
-                    "
-                            >
-                                Kandha Engineering Tech Solutions (KETS) offers
-                                end-to-end solutions in engineering, testing
-                                and validation, with deep domain expertise
-                                across the automotive, aerospace, defence
-                                and industrial sectors. We help you innovate,
-                                optimize and achieve compliance with global
-                                standards, delivering reliable and future-ready
-                                solutions.
-                            </p>
-
-
-                            {/* =================================================
-                    LEARN MORE
-                ================================================= */}
-                            <div
-                                className="
-                        mt-7
-                        sm:mt-8
-
-                        lg:mt-7
-                    "
-                            >
-                                <Link
-                                    to="/about"
-                                    className="
-                            inline-flex
-                            h-[42px]
-                            w-[145px]
-                            items-center
-                            justify-center
-                            gap-1
-                            rounded-full
-                            border-2
-                            border-[#E9A91F]
-                            text-[12px]
-                            font-bold
-                            leading-none
-                            whitespace-nowrap
-                            text-[#063968]
-                            transition-all
-                            duration-200
-
-                            md:h-[44px]
-                            md:w-[155px]
-                            md:text-[13px]
-
-                            lg:hover:bg-[#E9A91F]
-                            lg:hover:text-white
-                        "
-                                >
+                            {/* ================================================= DESCRIPTION ================================================= */}
+                            <p className=" mt-6 max-w-[500px] text-[11px] leading-[1.5rem] text-[#17466f] sm:mt-6 sm:text-[12px] md:text-[13px] lg:translate-y-[20px] lg:mt-6 " >
+                                Kandha Engineering Tech Solutions (KETS) offers end-to-end solutions in engineering, testing and validation,
+                                with deep domain expertise across the automotive, aerospace, defence and industrial sectors. We help you innovate,
+                                optimize and achieve compliance with global standards, delivering reliable and future-ready solutions.
+                            </p> {/* ================================================= LEARN MORE ================================================= */}
+                            <div className=" mt-7 sm:mt-8 lg:mt-7 lg:translate-y-[30px] " >
+                                <Link to="/about" className=" inline-flex h-[42px] w-[145px] items-center justify-center gap-1 rounded-full border-2 border-[#E9A91F] text-[12px] font-bold leading-none whitespace-nowrap text-[#063968] transition-all duration-200 md:h-[44px] md:w-[155px] md:text-[13px] lg:hover:bg-[#E9A91F] lg:hover:text-white " >
                                     <span>Learn More</span>
-
-                                    <ArrowRight
-                                        size={17}
+                                    <ArrowRight size={17}
                                         strokeWidth={2.5}
                                         className="ml-1"
                                     />
                                 </Link>
                             </div>
-
                         </div>
                     </div>
-
-
                     {/* =====================================================
             DESKTOP RIGHT IMAGE
         ===================================================== */}
@@ -775,7 +723,7 @@ const Home = () => {
                 z-20
                 hidden
                 h-[300px]
-                w-[55%]
+                w-[52%]
 
                 lg:block
             "
@@ -799,7 +747,7 @@ const Home = () => {
                     <div
                         className="
                 relative
-                mt-0
+                top-5
                 h-[210px]
                 w-full
                 overflow-hidden
@@ -825,6 +773,7 @@ const Home = () => {
             </section>
 
 
+
             {/* =========================================================
                 HOMOLOGATION SUPPORT
             ========================================================= */}
@@ -841,21 +790,31 @@ const Home = () => {
                     />
                 </div>
 
+
                 <div
                     className="
-                        relative
-                        z-10
-                        mx-auto
-                        max-w-[1440px]
-                        px-5
-                        py-7
+    relative
+    z-10
 
-                        sm:px-8
-                        sm:py-8
+    left-[20px]
+    w-[calc(100%-40px)]
 
-                        lg:px-[50px]
-                    "
+    py-7
+
+    sm:left-[32px]
+    sm:w-[calc(100%-64px)]
+    sm:py-8
+
+    lg:static
+    lg:left-auto
+    lg:w-auto
+    lg:max-w-[1440px]
+    lg:min-h-[330px]
+    lg:px-[50px]
+  "
                 >
+
+
 
                     {/* NEW SERVICE */}
                     <div
@@ -872,24 +831,28 @@ const Home = () => {
                     >
                         <span
                             className="
-            inline-flex
-            h-[28px]
-            min-w-[120px]
-            items-center
-            justify-center
-            rounded-full
-            bg-[#E9A91F]
-            px-5
-            text-[10px]
-            font-bold
-            uppercase
-            tracking-[0.08em]
-            text-white
+        relative
+        top-[6px]
+        inline-flex
+        h-[28px]
+        min-w-[120px]
+        items-center
+        justify-center
+        rounded-full
+        bg-[#E9A91F]
+        px-5
+        text-[10px]
+        font-bold
+        uppercase
+        tracking-[0.08em]
+        leading-none
+        text-white
 
-            lg:h-[30px]
-            lg:min-w-[125px]
-            lg:text-[11px]
-        "
+        lg:top-0
+        lg:h-[30px]
+        lg:min-w-[125px]
+        lg:text-[11px]
+    "
                         >
                             NEW SERVICE
                         </span>
@@ -981,35 +944,46 @@ const Home = () => {
 
                             <div className="h-[8px]" />
 
-                            <Link
-                                to="/homologation"
+
+                            <div
                                 className="
-                                    inline-flex
-                                    h-[36px]
-                                    w-[125px]
-                                    items-center
-                                    justify-center
-                                    rounded-full
-                                    border-2
-                                    border-[#E9A91F]
-                                    text-[11px]
-                                    font-bold
-                                    text-[#063968]
-                                    transition-all
-                                    duration-200
-
-                                    md:hover:bg-[#E9A91F]
-                                    md:hover:text-white
-                                "
+        mt-2
+        lg:relative
+        lg:top-2
+    "
                             >
-                                <span>Learn More</span>
+                                <Link
+                                    to="/homologation"
+                                    className="
+            inline-flex
+            h-[36px]
+            w-[125px]
+            items-center
+            justify-center
+            rounded-full
+            border-2
+            border-[#E9A91F]
+            text-[11px]
+            font-bold
+            text-[#063968]
+            transition-all
+            duration-200
 
-                                <ArrowRight
-                                    size={15}
-                                    strokeWidth={2.5}
-                                    className="ml-1"
-                                />
-                            </Link>
+            md:hover:bg-[#E9A91F]
+            md:hover:text-white
+        "
+                                >
+                                    <span>Learn More</span>
+
+                                    <ArrowRight
+                                        size={15}
+                                        strokeWidth={2.5}
+                                        className="ml-1"
+                                    />
+                                </Link>
+                            </div>
+
+
 
                         </div>
 
@@ -1019,31 +993,31 @@ const Home = () => {
                         ================================================= */}
                         <div
                             className="
-        ml-0
-        h-auto
-        min-h-[220px]
-        w-full
-        max-w-full
-        overflow-hidden
-        rounded-lg
-        border
-        border-[#D9D9D9]
-        bg-white/40
-        px-5
-        py-5
+    ml-[20px]
+    h-auto
+    min-h-[190px]
+    w-full
+    max-w-full
+    overflow-hidden
+    rounded-lg
+    border
+    border-[#D9D9D9]
+    bg-white/40
+    px-5
+    py-5
 
-        lg:ml-[15px]
-        lg:h-[240px]
-        lg:max-w-full
-        lg:translate-x-[35px]
-        lg:px-6
-        lg:py-[15px]
-    "
+    lg:ml-[15px]
+    lg:h-[190px]
+    lg:max-w-full
+    lg:translate-x-[35px]
+    lg:px-6
+    lg:py-[15px]
+  "
                         >
-                            <div className="relative left-0 w-full lg:left-[15px]">
+                            <div className="relative left-[10px] w-[calc(100%-10px)] lg:left-[15px] lg:w-full">
 
                                 {/* TITLE */}
-                                <div className="flex w-full items-center gap-3">
+                                <div className="flex w-full items-center gap-3 translate-y-2">
 
                                     <div
                                         className="
@@ -1098,6 +1072,7 @@ const Home = () => {
                 text-[#17466f]
 
                 sm:text-[12px]
+                translate-y-4
             "
                                 >
                                     Homologation is the certification process
@@ -1141,6 +1116,7 @@ const Home = () => {
 
                             <div
                                 className="
+                                  relative top-5
                                     mt-5
                                     grid
                                     grid-cols-2
@@ -1173,15 +1149,6 @@ const Home = () => {
                                                 className="text-white"
                                             />
                                         </div>
-
-                                        <ChevronRight
-                                            size={19}
-                                            className="
-                                                absolute
-                                                -right-2
-                                                text-[#E9A91F]
-                                            "
-                                        />
 
                                     </div>
 
@@ -1234,15 +1201,6 @@ const Home = () => {
                                             />
                                         </div>
 
-                                        <ChevronRight
-                                            size={19}
-                                            className="
-                                                absolute
-                                                -right-2
-                                                text-[#E9A91F]
-                                            "
-                                        />
-
                                     </div>
 
                                     <p className="mt-3 text-[10px] font-bold text-[#063968] lg:text-[11px]">
@@ -1294,14 +1252,7 @@ const Home = () => {
                                             />
                                         </div>
 
-                                        <ChevronRight
-                                            size={19}
-                                            className="
-                                                absolute
-                                                -right-2
-                                                text-[#E9A91F]
-                                            "
-                                        />
+
 
                                     </div>
 
@@ -1319,32 +1270,33 @@ const Home = () => {
 
                                 </div>
 
-
                                 {/* STEP 4 */}
                                 <div
                                     className="
-                                        border-l
-                                        border-[#D9D9D9]
-                                        px-2
-                                        text-center
-                                    "
+        relative
+        border-l
+        border-[#D9D9D9]
+        px-2
+        text-center
+
+        lg:min-w-[125px]
+        lg:-translate-x-[12px]
+    "
                                 >
-
                                     <div className="flex items-center justify-center">
-
                                         <div
                                             className="
-                                                flex
-                                                h-[45px]
-                                                w-[45px]
-                                                items-center
-                                                justify-center
-                                                rounded-full
-                                                bg-[#063968]
+                flex
+                h-[45px]
+                w-[45px]
+                items-center
+                justify-center
+                rounded-full
+                bg-[#063968]
 
-                                                lg:h-[48px]
-                                                lg:w-[48px]
-                                            "
+                lg:h-[48px]
+                lg:w-[48px]
+            "
                                         >
                                             <Globe2
                                                 size={22}
@@ -1352,7 +1304,6 @@ const Home = () => {
                                                 className="text-white"
                                             />
                                         </div>
-
                                     </div>
 
                                     <p className="mt-3 text-[10px] font-bold text-[#063968] lg:text-[11px]">
@@ -1362,12 +1313,11 @@ const Home = () => {
                                         </span>
                                     </p>
 
-                                    <p className="mt-2 text-[9px] leading-[1.2rem] text-[#17466f] lg:text-[10px]">
+                                    <p className="mt-2 whitespace-nowrap text-[9px] leading-[1.2rem] text-[#17466f] lg:text-[10px]">
                                         Enable product launch
                                         <br />
                                         in target markets
                                     </p>
-
                                 </div>
 
                             </div>
@@ -1389,72 +1339,79 @@ const Home = () => {
 
                 <div
                     className="
-                        relative
-                        z-10
-                        mx-auto
-                        max-w-[1440px]
-                        px-5
-                        pt-6
-                        pb-8
+    relative
+    z-10
 
-                        sm:px-8
+    left-[20px]
+    w-[calc(100%-40px)]
 
-                        lg:px-[48px]
-                    "
+    pt-6
+    pb-8
+
+    sm:left-[32px]
+    sm:w-[calc(100%-64px)]
+
+    lg:static
+    lg:left-auto
+    lg:w-auto
+    lg:max-w-[1440px]
+    lg:px-[48px]
+  "
                 >
 
                     {/* HEADER */}
+
                     <div
                         className="
-                            mb-[30px]
-                            flex
-                            flex-col
-                            items-start
-                            justify-between
-                            gap-5
+        flex
+        flex-col
+        items-start
+        justify-between
 
-                            lg:mb-[45px]
-                            lg:flex-row
-                            lg:items-end
-                            lg:gap-0
-                        "
+        lg:flex-row
+        lg:items-end
+    "
                     >
-
                         <div>
 
+                            {/* OUR SOLUTIONS */}
                             <p
                                 className="
-                                    relative
-                                    left-0
-                                    text-[13px]
-                                    font-bold
-                                    uppercase
-                                    tracking-[0.06em]
-                                    text-[#E9A91F]
+                relative
+                left-0
+                translate-y-2
+                text-[13px]
+                font-bold
+                uppercase
+                tracking-[0.06em]
+                text-[#E9A91F]
 
-                                    lg:left-10
-                                    lg:text-[15px]
-                                "
+                lg:left-10
+                lg:translate-y-0
+                lg:text-[15px]
+            "
                             >
                                 OUR SOLUTIONS
                             </p>
 
+                            {/* MAIN HEADING */}
                             <h2
                                 className="
-                                    relative
-                                    left-0
-                                    mt-1
-                                    max-w-[700px]
-                                    text-[19px]
-                                    font-bold
-                                    leading-[1.15]
-                                    text-[#063968]
+                relative
+                left-0
+                translate-y-[12px]
+                max-w-[700px]
+                text-[22px]
+                font-bold
+                leading-[1.2]
+                text-[#063968]
 
-                                    sm:text-[21px]
+                sm:text-[24px]
 
-                                    lg:left-10
-                                    lg:text-[23px]
-                                "
+                lg:left-10
+                lg:translate-y-[10px]
+                lg:text-[26px]
+            "
                             >
                                 Comprehensive Engineering &amp; Technology
                                 Solutions
@@ -1462,35 +1419,25 @@ const Home = () => {
 
                         </div>
 
-
+                        {/* RIGHT TEXT */}
                         <div
                             className="
-                                hidden
-                                items-center
-                                gap-3
-
-                                lg:flex
-                            "
+            hidden
+            items-center
+            gap-3
+            lg:flex
+            lg:translate-y-[10px]
+        "
                         >
 
-                            <div className="h-[3px] w-[25px] bg-[#E9A91F]" />
 
-                            <p
-                                className="
-                                    text-[9px]
-                                    font-medium
-                                    leading-[1.35]
-                                    text-[#063968]
-                                "
-                            >
-                                From Concept to Execution
-                                <br />
-                                — We Ensure It All
-                            </p>
 
                         </div>
-
                     </div>
+
+                    {/* SPACE BETWEEN HEADER AND CARDS */}
+                    <div className="h-[50px] lg:h-[50px]" />
+
 
 
                     {/* SOLUTION CARDS */}
@@ -1509,50 +1456,50 @@ const Home = () => {
                     >
 
                         {/* CARD 1 */}
+
                         <div
-                            className="
-                                relative
-                                left-0
-                                flex
-                                h-[100px]
-                                w-full
-                                items-center
-                                justify-start
-                                gap-4
-                                rounded-lg
-                                border
-                                border-[#DCEAF2]
-                                bg-white
-                                px-5
-                                shadow-sm
+                            className=" 
+        relative 
+        left-0 
+        flex 
+        h-[110px] 
+        w-full 
+        items-center 
+        justify-start 
+        gap-4 
+        rounded-lg 
+        border 
+        border-[#DCEAF2] 
+        bg-white 
+        px-5 
+        shadow-sm 
 
-                                sm:h-[92px]
-                                sm:px-6
+        sm:h-[102px] 
+        sm:px-6 
 
-                                lg:left-10
-                                lg:w-[80%]
-                                lg:px-8
-                            "
+        lg:left-10 
+        lg:w-[85%] 
+        lg:px-8 
+    "
                         >
-
                             <div
-                                className="
-                                    relative
-                                    left-0
-                                    flex
-                                    h-[45px]
-                                    w-[45px]
-                                    shrink-0
-                                    items-center
-                                    justify-center
-                                    rounded-full
-                                    border-2
-                                    border-[#E9A91F]
+                                className=" 
+            relative 
+            left-0 
+            flex 
+            h-[45px] 
+            w-[45px] 
+            shrink-0 
+            items-center 
+            justify-center 
+            rounded-full 
+            border-2 
+            border-[#E9A91F] 
 
-                                    lg:left-2
-                                    lg:h-[48px]
-                                    lg:w-[48px]
-                                "
+            lg:left-2 
+            lg:h-[48px] 
+            lg:w-[40px] 
+        "
                             >
                                 <Settings
                                     size={24}
@@ -1562,11 +1509,11 @@ const Home = () => {
                             </div>
 
                             <div>
-                                <h3 className="text-[12px] font-bold text-[#063968]">
+                                <h3 className="text-[15px] font-bold text-[#063968]">
                                     Design &amp; Engineering
                                 </h3>
 
-                                <p className="mt-1 text-[9px] leading-[1.2rem] text-[#17466f]">
+                                <p className="mt-1 text-[12px] leading-[1.2rem] text-[#17466f]">
                                     Custom engineering solutions for
                                     <br />
                                     high-performance systems.
@@ -1574,14 +1521,14 @@ const Home = () => {
 
                                 <Link
                                     to="/solutions"
-                                    className="
-                                        mt-0.5
-                                        inline-flex
-                                        items-center
-                                        text-[9px]
-                                        font-bold
-                                        text-[#063968]
-                                    "
+                                    className=" 
+                mt-0.5 
+                inline-flex 
+                items-center 
+                text-[12px] 
+                font-bold 
+                text-[#063968] 
+            "
                                 >
                                     Learn More
                                     <ArrowRight
@@ -1594,51 +1541,52 @@ const Home = () => {
                         </div>
 
 
+
+
                         {/* CARD 2 */}
                         <div
-                            className="
-                                relative
-                                left-0
-                                flex
-                                h-[100px]
-                                w-full
-                                items-center
-                                justify-start
-                                gap-4
-                                rounded-lg
-                                border
-                                border-[#DCEAF2]
-                                bg-white
-                                px-5
-                                shadow-sm
+                            className=" 
+        relative 
+        left-0 
+        flex 
+        h-[110px] 
+        w-full 
+        items-center 
+        justify-start 
+        gap-4 
+        rounded-lg 
+        border 
+        border-[#DCEAF2] 
+        bg-white 
+        px-5 
+        shadow-sm 
 
-                                sm:h-[92px]
-                                sm:px-6
+        sm:h-[102px] 
+        sm:px-6 
 
-                                lg:left-10
-                                lg:w-[80%]
-                                lg:px-8
-                            "
+        lg:left-10 
+        lg:w-[85%] 
+        lg:px-8 
+    "
                         >
-
                             <div
-                                className="
-                                    relative
-                                    left-0
-                                    flex
-                                    h-[45px]
-                                    w-[45px]
-                                    shrink-0
-                                    items-center
-                                    justify-center
-                                    rounded-full
-                                    border-2
-                                    border-[#E9A91F]
+                                className=" 
+            relative 
+            left-0 
+            flex 
+            h-[45px] 
+            w-[45px] 
+            shrink-0 
+            items-center 
+            justify-center 
+            rounded-full 
+            border-2 
+            border-[#E9A91F] 
 
-                                    lg:left-2
-                                    lg:h-[48px]
-                                    lg:w-[48px]
-                                "
+            lg:left-2 
+            lg:h-[48px] 
+            lg:w-[40px] 
+        "
                             >
                                 <ChartNoAxesCombined
                                     size={24}
@@ -1648,11 +1596,11 @@ const Home = () => {
                             </div>
 
                             <div>
-                                <h3 className="text-[12px] font-bold text-[#063968]">
+                                <h3 className="text-[15px] font-bold text-[#063968]">
                                     Validation
                                 </h3>
 
-                                <p className="mt-1 text-[9px] leading-[1.2rem] text-[#17466f]">
+                                <p className="mt-1 text-[12px] leading-[1.2rem] text-[#17466f]">
                                     Comprehensive validation to
                                     <br />
                                     ensure performance and reliability.
@@ -1660,7 +1608,7 @@ const Home = () => {
 
                                 <Link
                                     to="/solutions"
-                                    className="mt-0.5 inline-flex items-center text-[9px] font-bold text-[#063968]"
+                                    className="mt-0.5 inline-flex items-center text-[12px] font-bold text-[#063968]"
                                 >
                                     Learn More
                                     <ArrowRight
@@ -1675,49 +1623,48 @@ const Home = () => {
 
                         {/* CARD 3 */}
                         <div
-                            className="
-                                relative
-                                left-0
-                                flex
-                                h-[100px]
-                                w-full
-                                items-center
-                                justify-start
-                                gap-4
-                                rounded-lg
-                                border
-                                border-[#DCEAF2]
-                                bg-white
-                                px-5
-                                shadow-sm
+                            className=" 
+        relative 
+        left-0 
+        flex 
+        h-[110px] 
+        w-full 
+        items-center 
+        justify-start 
+        gap-4 
+        rounded-lg 
+        border 
+        border-[#DCEAF2] 
+        bg-white 
+        px-5 
+        shadow-sm 
 
-                                sm:h-[92px]
-                                sm:px-6
+        sm:h-[102px] 
+        sm:px-6 
 
-                                lg:left-10
-                                lg:w-[80%]
-                                lg:px-8
-                            "
+        lg:left-10 
+        lg:w-[85%] 
+        lg:px-8 
+    "
                         >
-
                             <div
-                                className="
-                                    relative
-                                    left-0
-                                    flex
-                                    h-[45px]
-                                    w-[45px]
-                                    shrink-0
-                                    items-center
-                                    justify-center
-                                    rounded-full
-                                    border-2
-                                    border-[#E9A91F]
+                                className=" 
+            relative 
+            left-0 
+            flex 
+            h-[45px] 
+            w-[45px] 
+            shrink-0 
+            items-center 
+            justify-center 
+            rounded-full 
+            border-2 
+            border-[#E9A91F] 
 
-                                    lg:left-2
-                                    lg:h-[48px]
-                                    lg:w-[48px]
-                                "
+            lg:left-2 
+            lg:h-[48px] 
+            lg:w-[40px] 
+        "
                             >
                                 <Box
                                     size={24}
@@ -1727,11 +1674,11 @@ const Home = () => {
                             </div>
 
                             <div>
-                                <h3 className="text-[12px] font-bold text-[#063968]">
+                                <h3 className="text-[15px] font-bold text-[#063968]">
                                     Prototyping
                                 </h3>
 
-                                <p className="mt-1 text-[9px] leading-[1.2rem] text-[#17466f]">
+                                <p className="mt-1 text-[12px] leading-[1.2rem] text-[#17466f]">
                                     Rapid prototyping and build development
                                     <br />
                                     for faster time-to-market.
@@ -1739,7 +1686,7 @@ const Home = () => {
 
                                 <Link
                                     to="/solutions"
-                                    className="mt-0.5 inline-flex items-center text-[9px] font-bold text-[#063968]"
+                                    className="mt-0.5 inline-flex items-center text-[12px] font-bold text-[#063968]"
                                 >
                                     Learn More
                                     <ArrowRight
@@ -1754,49 +1701,48 @@ const Home = () => {
 
                         {/* CARD 4 */}
                         <div
-                            className="
-                                relative
-                                left-0
-                                flex
-                                h-[100px]
-                                w-full
-                                items-center
-                                justify-start
-                                gap-4
-                                rounded-lg
-                                border
-                                border-[#DCEAF2]
-                                bg-white
-                                px-5
-                                shadow-sm
+                            className=" 
+        relative 
+        left-0 
+        flex 
+        h-[110px] 
+        w-full 
+        items-center 
+        justify-start 
+        gap-4 
+        rounded-lg 
+        border 
+        border-[#DCEAF2] 
+        bg-white 
+        px-5 
+        shadow-sm 
 
-                                sm:h-[92px]
-                                sm:px-6
+        sm:h-[102px] 
+        sm:px-6 
 
-                                lg:left-10
-                                lg:w-[80%]
-                                lg:px-8
-                            "
+        lg:left-10 
+        lg:w-[85%] 
+        lg:px-8 
+    "
                         >
-
                             <div
-                                className="
-                                    relative
-                                    left-0
-                                    flex
-                                    h-[45px]
-                                    w-[45px]
-                                    shrink-0
-                                    items-center
-                                    justify-center
-                                    rounded-full
-                                    border-2
-                                    border-[#E9A91F]
+                                className=" 
+            relative 
+            left-0 
+            flex 
+            h-[45px] 
+            w-[45px] 
+            shrink-0 
+            items-center 
+            justify-center 
+            rounded-full 
+            border-2 
+            border-[#E9A91F] 
 
-                                    lg:left-2
-                                    lg:h-[48px]
-                                    lg:w-[48px]
-                                "
+            lg:left-2 
+            lg:h-[48px] 
+            lg:w-[40px] 
+        "
                             >
                                 <FileCheck2
                                     size={24}
@@ -1806,11 +1752,11 @@ const Home = () => {
                             </div>
 
                             <div>
-                                <h3 className="text-[12px] font-bold text-[#063968]">
+                                <h3 className="text-[15px] font-bold text-[#063968]">
                                     Certification
                                 </h3>
 
-                                <p className="mt-1 text-[9px] leading-[1.2rem] text-[#17466f]">
+                                <p className="mt-1 text-[12px] leading-[1.2rem] text-[#17466f]">
                                     Support for product certification to meet
                                     <br />
                                     global standards and regulations.
@@ -1818,7 +1764,7 @@ const Home = () => {
 
                                 <Link
                                     to="/solutions"
-                                    className="mt-0.5 inline-flex items-center text-[9px] font-bold text-[#063968]"
+                                    className="mt-0.5 inline-flex items-center text-[12px] font-bold text-[#063968]"
                                 >
                                     Learn More
                                     <ArrowRight
@@ -1833,49 +1779,48 @@ const Home = () => {
 
                         {/* CARD 5 */}
                         <div
-                            className="
-                                relative
-                                left-0
-                                flex
-                                h-[100px]
-                                w-full
-                                items-center
-                                justify-start
-                                gap-4
-                                rounded-lg
-                                border
-                                border-[#DCEAF2]
-                                bg-white
-                                px-5
-                                shadow-sm
+                            className=" 
+        relative 
+        left-0 
+        flex 
+        h-[110px] 
+        w-full 
+        items-center 
+        justify-start 
+        gap-4 
+        rounded-lg 
+        border 
+        border-[#DCEAF2] 
+        bg-white 
+        px-5 
+        shadow-sm 
 
-                                sm:h-[92px]
-                                sm:px-6
+        sm:h-[102px] 
+        sm:px-6 
 
-                                lg:left-10
-                                lg:w-[80%]
-                                lg:px-8
-                            "
+        lg:left-10 
+        lg:w-[85%] 
+        lg:px-8 
+    "
                         >
-
                             <div
-                                className="
-                                    relative
-                                    left-0
-                                    flex
-                                    h-[45px]
-                                    w-[45px]
-                                    shrink-0
-                                    items-center
-                                    justify-center
-                                    rounded-full
-                                    border-2
-                                    border-[#E9A91F]
+                                className=" 
+            relative 
+            left-0 
+            flex 
+            h-[45px] 
+            w-[45px] 
+            shrink-0 
+            items-center 
+            justify-center 
+            rounded-full 
+            border-2 
+            border-[#E9A91F] 
 
-                                    lg:left-2
-                                    lg:h-[48px]
-                                    lg:w-[48px]
-                                "
+            lg:left-2 
+            lg:h-[48px] 
+            lg:w-[40px] 
+        "
                             >
                                 <Megaphone
                                     size={24}
@@ -1885,11 +1830,11 @@ const Home = () => {
                             </div>
 
                             <div>
-                                <h3 className="text-[12px] font-bold text-[#063968]">
+                                <h3 className="text-[15px] font-bold text-[#063968]">
                                     Testing &amp; Safety
                                 </h3>
 
-                                <p className="mt-1 text-[9px] leading-[1.2rem] text-[#17466f]">
+                                <p className="mt-1 text-[12px] leading-[1.2rem] text-[#17466f]">
                                     Advanced testing and safety
                                     <br />
                                     assessments for complex systems.
@@ -1897,11 +1842,11 @@ const Home = () => {
 
                                 <Link
                                     to="/solutions"
-                                    className="mt-0.5 inline-flex items-center text-[9px] font-bold text-[#063968]"
+                                    className="mt-0.5 inline-flex items-center text-[12px] font-bold text-[#063968]"
                                 >
                                     Learn More
                                     <ArrowRight
-                                    size={12}
+                                        size={12}
                                         strokeWidth={2.5}
                                         className="ml-1"
                                     />
@@ -1912,49 +1857,48 @@ const Home = () => {
 
                         {/* CARD 6 */}
                         <div
-                            className="
-                                relative
-                                left-0
-                                flex
-                                h-[100px]
-                                w-full
-                                items-center
-                                justify-start
-                                gap-4
-                                rounded-lg
-                                border
-                                border-[#DCEAF2]
-                                bg-white
-                                px-5
-                                shadow-sm
+                            className=" 
+        relative 
+        left-0 
+        flex 
+        h-[110px] 
+        w-full 
+        items-center 
+        justify-start 
+        gap-4 
+        rounded-lg 
+        border 
+        border-[#DCEAF2] 
+        bg-white 
+        px-5 
+        shadow-sm 
 
-                                sm:h-[92px]
-                                sm:px-6
+        sm:h-[102px] 
+        sm:px-6 
 
-                                lg:left-10
-                                lg:w-[80%]
-                                lg:px-8
-                            "
+        lg:left-10 
+        lg:w-[85%] 
+        lg:px-8 
+    "
                         >
-
                             <div
-                                className="
-                                    relative
-                                    left-0
-                                    flex
-                                    h-[45px]
-                                    w-[45px]
-                                    shrink-0
-                                    items-center
-                                    justify-center
-                                    rounded-full
-                                    border-2
-                                    border-[#E9A91F]
+                                className=" 
+            relative 
+            left-0 
+            flex 
+            h-[45px] 
+            w-[45px] 
+            shrink-0 
+            items-center 
+            justify-center 
+            rounded-full 
+            border-2 
+            border-[#E9A91F] 
 
-                                    lg:left-2
-                                    lg:h-[48px]
-                                    lg:w-[48px]
-                                "
+            lg:left-2 
+            lg:h-[48px] 
+            lg:w-[40px] 
+        "
                             >
                                 <Headphones
                                     size={24}
@@ -1966,19 +1910,17 @@ const Home = () => {
                             <div>
                                 <h3
                                     className="
-                                        text-[12px]
+                                        text-[15px]
                                         font-bold
                                         leading-[1.15]
                                         text-[#063968]
                                     "
                                 >
-                                    After Sales Support &amp;
-                                    <span className="block">
-                                        Higher Services
-                                    </span>
+                                    After Sales Support &amp; Higher Services
+
                                 </h3>
 
-                                <p className="mt-1 text-[9px] leading-[1.2rem] text-[#17466f]">
+                                <p className="mt-1 text-[12px] leading-[1.2rem] text-[#17466f]">
                                     Lifecycle support, maintenance
                                     <br />
                                     and technical assistance.
@@ -1986,7 +1928,7 @@ const Home = () => {
 
                                 <Link
                                     to="/solutions"
-                                    className="mt-0.5 inline-flex items-center text-[9px] font-bold text-[#063968]"
+                                    className="mt-0.5 inline-flex items-center text-[12px] font-bold text-[#063968]"
                                 >
                                     Learn More
                                     <ArrowRight
@@ -2017,16 +1959,23 @@ const Home = () => {
 
                 <div
                     className="
-                        mx-auto
-                        max-w-[1440px]
-                        px-5
-                        py-7
+    relative
 
-                        sm:px-8
-                        sm:py-8
+    left-[20px]
+    w-[calc(100%-40px)]
 
-                        lg:px-[48px]
-                    "
+    py-7
+
+    sm:left-[32px]
+    sm:w-[calc(100%-64px)]
+    sm:py-8
+
+    lg:static
+    lg:left-auto
+    lg:w-auto
+    lg:max-w-[1440px]
+    lg:px-[48px]
+  "
                 >
 
                     <div
@@ -2092,7 +2041,7 @@ const Home = () => {
 
                             <div className="h-[12px]" />
 
-                           
+
 
                         </div>
 
@@ -2347,16 +2296,23 @@ const Home = () => {
 
                 <div
                     className="
-                        mx-auto
-                        max-w-[1440px]
-                        px-5
-                        py-6
+    relative
 
-                        sm:px-8
-                        sm:py-4
+    left-[20px]
+    w-[calc(100%-40px)]
 
-                        lg:px-[48px]
-                    "
+    py-6
+
+    sm:left-[32px]
+    sm:w-[calc(100%-64px)]
+    sm:py-4
+
+    lg:static
+    lg:left-auto
+    lg:w-auto
+    lg:max-w-[1440px]
+    lg:px-[48px]
+  "
                 >
 
                     <div
@@ -2389,6 +2345,7 @@ const Home = () => {
             uppercase
             tracking-[0.06em]
             text-[#E9A91F]
+            
         "
                             >
                                 WHY CHOOSE US
@@ -2600,24 +2557,19 @@ const Home = () => {
                 {/* CTA CONTENT */}
                 <div
                     className="
-                        relative
-                        z-10
-                        mx-auto
-                        flex
-                        min-h-[230px]
-                        max-w-[1440px]
-                        items-center
-                        px-5
-                        py-6
+    relative
+    left-[20px]
+    w-[calc(100%-40px)]
 
-                        sm:min-h-[200px]
-                        sm:px-8
+    sm:left-[32px]
+    sm:w-[calc(100%-64px)]
+     translate-y-[30px]
 
-                        md:h-full
-                        md:min-h-0
-                        md:px-[48px]
-                        md:py-0
-                    "
+    md:static
+    md:left-auto
+    md:w-auto
+    md:px-[48px]
+  "
                 >
 
                     <div
@@ -2739,7 +2691,7 @@ const Home = () => {
                             "
                         >
                             <Link
-                                 to="/contact"
+                                to="/contact"
                                 className="
                                     inline-flex
                                     h-[38px]

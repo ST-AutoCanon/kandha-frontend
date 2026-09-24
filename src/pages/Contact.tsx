@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Footer from "../Components/footer";
 import {
     ArrowLeft,
     CheckCircle,
@@ -15,8 +16,6 @@ const Contact = () => {
         email: "",
         phone: "",
         company: "",
-        service: "",
-        projectType: "",
         message: "",
     });
 
@@ -41,25 +40,73 @@ const Contact = () => {
         }));
     };
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+   const handleSubmit = async (
+    e: React.FormEvent<HTMLFormElement>
+) => {
+    e.preventDefault();
+    console.log(
+    "Web3Forms Access Key exists:",
+    !!import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
+);
 
-        console.log("Engineering Technology Enquiry:", formData);
+    try {
+        const response = await fetch(
+            "https://api.web3forms.com/submit",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify({
+                    access_key:
+                        import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
 
-        setShowSuccess(true);
+                    subject: `New Engineering Enquiry - ${formData.fullName}`,
 
-        setFormData({
-            fullName: "",
-            email: "",
-            phone: "",
-            company: "",
-            service: "",
-            projectType: "",
-            message: "",
-        });
-    };
+                    from_name: formData.fullName,
 
+                    email: formData.email,
+
+                    fullName: formData.fullName,
+                    phone: formData.phone,
+                    company: formData.company,
+                    message: formData.message,
+                }),
+            }
+        );
+
+        const result = await response.json();
+
+        if (result.success) {
+            console.log("Engineering enquiry sent successfully");
+
+            setShowSuccess(true);
+
+            setFormData({
+                fullName: "",
+                email: "",
+                phone: "",
+                company: "",
+                message: "",
+            });
+        } else {
+            console.error("Web3Forms error:", result);
+
+            alert(
+                "Unable to send your enquiry. Please try again."
+            );
+        }
+    } catch (error) {
+        console.error("Failed to send enquiry:", error);
+
+        alert(
+            "Unable to send your enquiry. Please try again."
+        );
+    }
+};
     return (
+        <>
         <main
             className="min-h-screen w-full bg-[#F4F8FB]"
             style={{
@@ -655,6 +702,8 @@ const Contact = () => {
                 </div>
             )}
         </main>
+        <Footer/>
+        </>
     );
 };
 
