@@ -204,46 +204,47 @@ const Footer = () => {
                                 NAVIGATION
                             ================================================= */}
                             <nav
-                                className="
-                                    grid
-                                    w-full
-                                    grid-cols-2
-                                    gap-x-6
-                                    gap-y-4
-                                    text-center
+    className="
+        grid
+        w-full
+        grid-cols-3
+        gap-x-6
+        gap-y-4
+        text-center
 
-                                    sm:grid-cols-4
-                                    sm:gap-x-8
+        sm:grid-cols-4
+        sm:gap-x-8
 
-                                    lg:flex
-                                    lg:w-auto
-                                    lg:flex-wrap
-                                    lg:items-center
-                                    lg:justify-center
-                                    lg:gap-x-8
-                                    lg:gap-y-4
-                                    lg:justify-end
-                                    lg:translate-x-[105px]
-                                "
-                            >
+        lg:flex
+        lg:w-auto
+        lg:flex-wrap
+        lg:items-center
+        lg:justify-center
+        lg:gap-x-8
+        lg:gap-y-4
+        lg:justify-end
+        lg:translate-x-[105px]
+    "
+>
                                 {navLinks.map((link) => (
                                     <a
-                                        key={link.label}
-                                        href={link.href}
-                                        className="
-                                            text-[12px]
-                                            font-medium
-                                            text-white
+    key={link.label}
+    href={link.href}
+    className="
+        text-center
+        text-[12px]
+        font-medium
+        text-white
 
-                                            sm:text-[13px]
+        sm:text-[13px]
 
-                                            lg:transition-colors
-                                            lg:duration-200
-                                            lg:hover:text-[#E9A91F]
-                                        "
-                                    >
-                                        {link.label}
-                                    </a>
+        lg:transition-colors
+        lg:duration-200
+        lg:hover:text-[#E9A91F]
+    "
+>
+    {link.label}
+</a>
                                 ))}
                             </nav>
 

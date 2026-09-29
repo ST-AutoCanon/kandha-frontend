@@ -1,12 +1,12 @@
 import heroImage from "../assets/hero-right-image.png";
 import herorightimage from "../assets/herorightImage.png";
-import expertise from "../assets/expertise-right-image.png";
-import automotive from "../assets/automotive.png";
+import expertise from "../assets/expertise.png";
+import automotive from "../assets/automative.png";
 import aerospace from "../assets/aerospace.png";
-import defence from "../assets/defence-homeland-security.png";
-import energy from "../assets/energy-renewables.png";
-import industrial from "../assets/industrial-products.png";
-import consumer from "../assets/consumer-goods.png";
+import defence from "../assets/defence.png";
+import energy from "../assets/enegyrenewable.png";
+import industrial from "../assets/industryprod.png";
+import consumer from "../assets/consumergoods.png";
 import ctaImage from "../assets/cta.png";
 import Footer from "../Components/footer";
 import { Link } from "react-router-dom";
@@ -21,6 +21,7 @@ import {
     Wrench,
     SearchCheck,
     ArrowRight,
+    Users,
     Lightbulb,
     Handshake,
     Globe2,
@@ -212,6 +213,7 @@ const Home = () => {
                 md:tracking-[0.12em]
 
                 lg:text-[12px]
+                translate-x-[-2px]
             "
                         >
                             TRUSTED PARTNER&nbsp;&nbsp; | &nbsp;&nbsp;
@@ -237,7 +239,7 @@ const Home = () => {
                         >
                             Turning Ideas into
 
-                            <span className="block text-[#E9A91F]">
+                            <span className="block translate-x-[5px] text-[#E9A91F]">
                                 Engineering Excellence
                             </span>
                         </h1>
@@ -256,6 +258,7 @@ const Home = () => {
                 md:mt-4
                 md:text-[14px]
                 md:leading-[1.5rem]
+                translate-x-[4px]
             "
                         >
                             Kandha Engineering Tech Solutions (KETS) offers
@@ -744,30 +747,29 @@ const Home = () => {
                     {/* =====================================================
             MOBILE IMAGE
         ===================================================== */}
-                    <div
-                        className="
-                relative
-                top-5
-                h-[210px]
-                w-full
-                overflow-hidden
-
-                sm:h-[240px]
-
-                lg:hidden
-            "
-                    >
-                        <img
-                            src={expertise}
-                            alt="Engineering and Technology Expertise"
-                            className="
-                    h-full
-                    w-full
-                    object-cover
-                    object-center
-                "
-                        />
-                    </div>
+                   {/* =====================================================
+    MOBILE IMAGE
+===================================================== */}
+<div
+    className="
+        relative
+        top-5
+        w-full
+        overflow-hidden
+        lg:hidden
+    "
+>
+    <img
+        src={expertise}
+        alt="Engineering and Technology Expertise"
+        className="
+            block
+            h-auto
+            w-full
+            object-contain
+        "
+    />
+</div>
 
                 </div>
             </section>
@@ -995,7 +997,7 @@ const Home = () => {
                             className="
     ml-[20px]
     h-auto
-    min-h-[190px]
+    min-h-[120px]
     w-full
     max-w-full
     overflow-hidden
@@ -1125,7 +1127,16 @@ const Home = () => {
                             >
 
                                 {/* STEP 1 */}
-                                <div className="relative px-2 text-center">
+                                <div
+                                    className="
+        relative
+        px-2
+        text-center
+        border-l-0
+        border-t-0
+        
+    "
+                                >
 
                                     <div className="flex items-center justify-center">
 
@@ -1168,15 +1179,16 @@ const Home = () => {
 
 
                                 {/* STEP 2 */}
-                                <div
-                                    className="
-                                        relative
-                                        border-l
-                                        border-[#D9D9D9]
-                                        px-2
-                                        text-center
-                                    "
-                                >
+                               <div
+    className="
+        relative
+        border-l
+        border-[#D9D9D9]
+        border-t-0
+        px-2
+        text-center
+    "
+>
 
                                     <div className="flex items-center justify-center">
 
@@ -1219,15 +1231,19 @@ const Home = () => {
 
 
                                 {/* STEP 3 */}
-                                <div
-                                    className="
-                                        relative
-                                        border-l
-                                        border-[#D9D9D9]
-                                        px-2
-                                        text-center
-                                    "
-                                >
+                               <div
+    className="
+        relative
+        border-l-0
+        border-t
+        border-[#D9D9D9]
+        px-2
+        text-center
+
+        md:border-l
+        md:border-t-0
+    "
+>
 
                                     <div className="flex items-center justify-center">
 
@@ -1272,18 +1288,20 @@ const Home = () => {
 
                                 {/* STEP 4 */}
                                 <div
-                                    className="
+    className="
         relative
         border-l
+        border-t
         border-[#D9D9D9]
         px-2
         text-center
 
         lg:min-w-[125px]
         lg:-translate-x-[12px]
+
+        md:border-t-0
     "
-                                >
-                                    <div className="flex items-center justify-center">
+>   <div className="flex items-center justify-center">
                                         <div
                                             className="
                 flex
@@ -1387,7 +1405,7 @@ const Home = () => {
                 text-[#E9A91F]
 
                 lg:left-10
-                lg:translate-y-0
+                lg:translate-y-4
                 lg:text-[15px]
             "
                             >
@@ -1409,7 +1427,7 @@ const Home = () => {
                 sm:text-[24px]
 
                 lg:left-10
-                lg:translate-y-[10px]
+                lg:translate-y-[25px]
                 lg:text-[26px]
             "
                             >
@@ -1485,7 +1503,7 @@ const Home = () => {
                             <div
                                 className=" 
             relative 
-            left-0 
+            left-4
             flex 
             h-[45px] 
             w-[45px] 
@@ -1508,7 +1526,7 @@ const Home = () => {
                                 />
                             </div>
 
-                            <div>
+                            <div className="relative left-[20px]">
                                 <h3 className="text-[15px] font-bold text-[#063968]">
                                     Design &amp; Engineering
                                 </h3>
@@ -1572,7 +1590,7 @@ const Home = () => {
                             <div
                                 className=" 
             relative 
-            left-0 
+            left-4 
             flex 
             h-[45px] 
             w-[45px] 
@@ -1595,7 +1613,7 @@ const Home = () => {
                                 />
                             </div>
 
-                            <div>
+                            <div className="relative left-[20px]">
                                 <h3 className="text-[15px] font-bold text-[#063968]">
                                     Validation
                                 </h3>
@@ -1650,7 +1668,7 @@ const Home = () => {
                             <div
                                 className=" 
             relative 
-            left-0 
+            left-4
             flex 
             h-[45px] 
             w-[45px] 
@@ -1673,7 +1691,7 @@ const Home = () => {
                                 />
                             </div>
 
-                            <div>
+                           <div className="relative left-[20px]">
                                 <h3 className="text-[15px] font-bold text-[#063968]">
                                     Prototyping
                                 </h3>
@@ -1728,7 +1746,7 @@ const Home = () => {
                             <div
                                 className=" 
             relative 
-            left-0 
+            left-4
             flex 
             h-[45px] 
             w-[45px] 
@@ -1751,7 +1769,7 @@ const Home = () => {
                                 />
                             </div>
 
-                            <div>
+                            <div className="relative left-[20px]">
                                 <h3 className="text-[15px] font-bold text-[#063968]">
                                     Certification
                                 </h3>
@@ -1806,7 +1824,7 @@ const Home = () => {
                             <div
                                 className=" 
             relative 
-            left-0 
+            left-4
             flex 
             h-[45px] 
             w-[45px] 
@@ -1829,7 +1847,7 @@ const Home = () => {
                                 />
                             </div>
 
-                            <div>
+                            <div className="relative left-[20px]">
                                 <h3 className="text-[15px] font-bold text-[#063968]">
                                     Testing &amp; Safety
                                 </h3>
@@ -1884,7 +1902,7 @@ const Home = () => {
                             <div
                                 className=" 
             relative 
-            left-0 
+            left-4
             flex 
             h-[45px] 
             w-[45px] 
@@ -1907,7 +1925,7 @@ const Home = () => {
                                 />
                             </div>
 
-                            <div>
+                            <div className="relative left-[20px]">
                                 <h3
                                     className="
                                         text-[15px]
@@ -2065,13 +2083,13 @@ const Home = () => {
                                 className="
                                     group
                                     relative
-                                    h-[110px]
+                                    h-[125px]
                                     overflow-hidden
                                     rounded-md
                                     border
                                     border-white/30
 
-                                    sm:h-[105px]
+                                    sm:h-[120px]
                                 "
                             >
                                 <img
@@ -2101,13 +2119,13 @@ const Home = () => {
                                 className="
                                     group
                                     relative
-                                    h-[110px]
+                                    h-[125px]
                                     overflow-hidden
                                     rounded-md
                                     border
                                     border-white/30
 
-                                    sm:h-[105px]
+                                    sm:h-[120px]
                                 "
                             >
                                 <img
@@ -2137,13 +2155,13 @@ const Home = () => {
                                 className="
                                     group
                                     relative
-                                    h-[110px]
+                                    h-[125px]
                                     overflow-hidden
                                     rounded-md
                                     border
                                     border-white/30
 
-                                    sm:h-[105px]
+                                    sm:h-[120px]
                                 "
                             >
                                 <img
@@ -2175,13 +2193,13 @@ const Home = () => {
                                 className="
                                     group
                                     relative
-                                    h-[110px]
+                                    h-[125px]
                                     overflow-hidden
                                     rounded-md
                                     border
                                     border-white/30
 
-                                    sm:h-[105px]
+                                    sm:h-[120px]
                                 "
                             >
                                 <img
@@ -2213,13 +2231,13 @@ const Home = () => {
                                 className="
                                     group
                                     relative
-                                    h-[110px]
+                                    h-[125px]
                                     overflow-hidden
                                     rounded-md
                                     border
                                     border-white/30
 
-                                    sm:h-[105px]
+                                    sm:h-[120px]
                                 "
                             >
                                 <img
@@ -2228,7 +2246,7 @@ const Home = () => {
                                     className="
                                         h-full
                                         w-full
-                                        object-cover
+                                        object-full
                                         transition-transform
                                         duration-300
 
@@ -2249,13 +2267,13 @@ const Home = () => {
                                 className="
                                     group
                                     relative
-                                    h-[110px]
+                                    h-[125px]
                                     overflow-hidden
                                     rounded-md
                                     border
                                     border-white/30
 
-                                    sm:h-[105px]
+                                    sm:h-[120px]
                                 "
                             >
                                 <img
@@ -2373,20 +2391,21 @@ const Home = () => {
                         <div className="grid grid-cols-2 md:grid-cols-5">
 
                             {/* EXPERIENCED TEAM */}
-                            <div
-                                className="
-                                    flex
-                                    min-h-[80px]
-                                    flex-col
-                                    items-center
-                                    justify-center
-                                    border-l
-                                    border-[#E9A91F]/40
-                                    px-2
-                                    text-center
-                                "
-                            >
-                                <Lightbulb
+                           <div
+    className="
+        flex
+        min-h-[80px]
+        flex-col
+        items-center
+        justify-center
+        border-l-0
+        border-[#E9A91F]/40
+        px-2
+        text-center
+        md:border-l
+    "
+>
+                                <Users
                                     size={27}
                                     strokeWidth={1.7}
                                     className="text-[#E9A91F]"
@@ -2401,19 +2420,19 @@ const Home = () => {
 
 
                             {/* INNOVATIVE */}
-                            <div
-                                className="
-                                    flex
-                                    min-h-[80px]
-                                    flex-col
-                                    items-center
-                                    justify-center
-                                    border-l
-                                    border-[#E9A91F]/40
-                                    px-2
-                                    text-center
-                                "
-                            >
+                          <div
+    className="
+        flex
+        min-h-[80px]
+        flex-col
+        items-center
+        justify-center
+        border-l
+        border-[#E9A91F]/40
+        px-2
+        text-center
+    "
+>
                                 <Lightbulb
                                     size={27}
                                     strokeWidth={1.7}
@@ -2429,19 +2448,22 @@ const Home = () => {
 
 
                             {/* QUALITY */}
-                            <div
-                                className="
-                                    flex
-                                    min-h-[80px]
-                                    flex-col
-                                    items-center
-                                    justify-center
-                                    border-l
-                                    border-[#E9A91F]/40
-                                    px-2
-                                    text-center
-                                "
-                            >
+                           <div
+    className="
+        flex
+        min-h-[80px]
+        flex-col
+        items-center
+        justify-center
+        border-l-0
+        border-t
+        border-[#E9A91F]/40
+        px-2
+        text-center
+        md:border-l
+        md:border-t-0
+    "
+>
                                 <BadgeCheck
                                     size={27}
                                     strokeWidth={1.7}
@@ -2458,18 +2480,20 @@ const Home = () => {
 
                             {/* CUSTOMER */}
                             <div
-                                className="
-                                    flex
-                                    min-h-[80px]
-                                    flex-col
-                                    items-center
-                                    justify-center
-                                    border-l
-                                    border-[#E9A91F]/40
-                                    px-2
-                                    text-center
-                                "
-                            >
+    className="
+        flex
+        min-h-[80px]
+        flex-col
+        items-center
+        justify-center
+        border-l
+        border-t
+        border-[#E9A91F]/40
+        px-2
+        text-center
+        md:border-t-0
+    "
+>
                                 <Handshake
                                     size={27}
                                     strokeWidth={1.7}
@@ -2485,32 +2509,38 @@ const Home = () => {
 
 
                             {/* PARTNERSHIPS */}
-                            <div
-                                className="
-                                    flex
-                                    min-h-[80px]
-                                    flex-col
-                                    items-center
-                                    justify-center
-                                    border-l
-                                    border-[#E9A91F]/40
-                                    px-2
-                                    text-center
-                                "
-                            >
-                                <ChartNoAxesCombined
-                                    size={27}
-                                    strokeWidth={1.7}
-                                    className="text-[#E9A91F]"
-                                />
+                           <div
+    className="
+        col-span-2
+        flex
+        min-h-[80px]
+        flex-col
+        items-center
+        justify-center
+      
+      
+        border-t
+        border-[#E9A91F]/40
+        px-2
+        text-center
 
-                                <h3 className="mt-1 text-[9px] font-bold leading-tight text-[#063968]">
-                                    Long-Term
-                                    <br />
-                                    Partnerships
-                                </h3>
-                            </div>
+        md:col-span-1
+        
+        md:border-t-0
+    "
+>
+    <ChartNoAxesCombined
+        size={27}
+        strokeWidth={1.7}
+        className="text-[#E9A91F]"
+    />
 
+    <h3 className="mt-1 text-[9px] font-bold leading-tight text-[#063968]">
+        Long-Term
+        <br />
+        Partnerships
+    </h3>
+</div>
                         </div>
 
                     </div>
