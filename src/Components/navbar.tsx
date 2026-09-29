@@ -336,96 +336,104 @@ const Navbar = () => {
             {/* =====================================================
                 MOBILE NAVIGATION
             ===================================================== */}
-            {isOpen && (
-                <div
-                    className="
-                        border-t
-                        border-gray-100
-                        bg-white
-                        px-4
-                        py-4
-                        shadow-md
+           {isOpen && (
+    <div
+    className="
+        border-t
+        border-black
+        bg-white
+        px-4
+        pt-4
+        pb-7
+        shadow-md
 
-                        sm:px-6
-                        sm:py-5
+        sm:px-6
+        sm:pt-5
+        sm:pb-8
 
-                        lg:hidden
-                    "
-                >
-                    <nav className="flex flex-col">
+        lg:hidden
+    "
+>
+        <nav
+            className="
+                relative
+                left-[30px]
+                flex
+                flex-col
+            "
+        >
+            {navItems.map((item) => {
+                const active = isActive(item.path);
 
-                        {navItems.map((item) => {
-                            const active = isActive(item.path);
+                return (
+                    <Link
+                        key={item.name}
+                        to={item.path}
+                        onClick={() => {
+                            setIsOpen(false);
+                            window.scrollTo(0, 0);
+                        }}
+                        className={`
+                            flex
+                            min-h-[44px]
+                            items-center
+                            justify-between
+                            border-b
+                            border-gray-100
+                            py-3
+                            text-[14px]
+                            font-medium
 
-                            return (
-                                <Link
-                                    key={item.name}
-                                    to={item.path}
-                                    onClick={() => {
-                                        setIsOpen(false);
-                                        window.scrollTo(0, 0);
-                                    }}
+                            ${
+                                active
+                                    ? "text-[#E5A719]"
+                                    : "text-[#003B70]"
+                            }
+                        `}
+                    >
+                        <span>{item.name}</span>
 
-                                    className={`
-                                        flex
-                                        min-h-[44px]
-                                        items-center
-                                        justify-between
-                                        border-b
-                                        border-gray-100
-                                        py-3
-                                        text-[14px]
-                                        font-medium
+                        {active && (
+                            <span className="h-2 w-2 rounded-full bg-[#E5A719]" />
+                        )}
+                    </Link>
+                );
+            })}
 
-                                        ${active
-                                            ? "text-[#E5A719]"
-                                            : "text-[#003B70]"
-                                        }
-                                    `}
-                                >
-                                    <span>{item.name}</span>
+           <button
+    type="button"
+    className="
+        relative
+        right-2
+        mt-3
+        flex
+        h-[42px]
+        w-[225px]
+        shrink-0
+        items-center
+        justify-center
+        gap-3
+        rounded-full
+        bg-[#E9A91F]
+        px-6
+        text-[13px]
+        font-semibold
+        text-white
+        shadow-sm
+        transition-all
+        duration-200
 
-                                    {/* MOBILE ACTIVE INDICATOR */}
-                                    {active && (
-                                        <span className="h-2 w-2 rounded-full bg-[#E5A719]" />
-                                    )}
-                                </Link>
-                            );
-                        })}
-
-
-                        {/* =================================================
-                            MOBILE GET IN TOUCH
-                        ================================================= */}
-                        <button
-                            type="button"
-                            className="
-    flex
-    h-[42px]
-    min-w-[125px]
-    items-center
-    justify-center
-    gap-3
-    rounded-full
-    bg-[#E9A91F]
-    px-6
-    text-[13px]
-    font-semibold
-    text-white
-    shadow-sm
-    transition-all
-    duration-200
-
-    hover:bg-[#D9960F]
-    hover:shadow-md
-  "
-                        >
-                            <span>Login</span>
-                        </button>
-
-                    </nav>
-                </div>
-            )}
+        hover:bg-[#D9960F]
+        hover:shadow-md
+    "
+>
+    <span>Login</span>
+</button>
+{/* GAP BEFORE HERO SECTION */}
+<div className="h-[20px] w-full" />
+        </nav>
+    </div>
+)}
 
         </header>
     );
