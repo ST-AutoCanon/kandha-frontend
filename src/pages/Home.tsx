@@ -993,39 +993,53 @@ const Home = () => {
                         {/* =================================================
                             MIDDLE - WHAT IS HOMOLOGATION
                         ================================================= */}
-                        <div
-                            className="
-    ml-[20px]
-    h-auto
-    min-h-[120px]
-    w-full
-    max-w-full
-    overflow-hidden
-    rounded-lg
-    border
-    border-[#D9D9D9]
-    bg-white/40
-    px-5
-    py-5
+                        {/* =================================================
+    MIDDLE - WHAT IS HOMOLOGATION
+================================================= */}
+<div
+    className="
+        ml-[20px]
+        h-auto
+        min-h-[165px]
+        w-[calc(100%-20px)]
+        max-w-full
+        overflow-hidden
+        rounded-lg
+        border
+        border-[#D9D9D9]
+        bg-white/40
+        px-5
+        py-6
 
-    lg:ml-[15px]
-    lg:h-[190px]
-    lg:max-w-full
-    lg:translate-x-[35px]
-    lg:px-6
-    lg:py-[15px]
-  "
-                        >
-                            <div className="relative left-[10px] w-[calc(100%-10px)] lg:left-[15px] lg:w-full">
+        lg:ml-[15px]
+        lg:h-[200px]
+        lg:w-full
+        lg:max-w-full
+        lg:translate-x-[35px]
+        lg:px-6
+        lg:py-5
+    "
+>
+    <div
+        className="
+    relative
+    left-[10px]
+    translate-y-3
+    w-[calc(100%-20px)]
+    lg:left-[15px]
+    lg:translate-y-3
+    lg:w-[calc(100%-15px)]
+"
+    >
 
-                                {/* TITLE */}
-                                <div className="flex w-full items-center gap-3 translate-y-2">
+        {/* TITLE */}
+        <div className="flex w-full items-center gap-3">
 
-                                    <div
-                                        className="
+            <div
+                className="
                     flex
-                    h-[44px]
-                    w-[44px]
+                    h-[46px]
+                    w-[46px]
                     shrink-0
                     items-center
                     justify-center
@@ -1033,58 +1047,57 @@ const Home = () => {
                     border-2
                     border-[#063968]
 
-                    lg:h-[46px]
-                    lg:w-[46px]
+                    lg:h-[48px]
+                    lg:w-[48px]
                 "
-                                    >
-                                        <Globe2
-                                            size={25}
-                                            strokeWidth={1.8}
-                                            className="text-[#063968]"
-                                        />
-                                    </div>
+            >
+                <Globe2
+                    size={25}
+                    strokeWidth={1.8}
+                    className="text-[#063968]"
+                />
+            </div>
 
-                                    <div className="min-w-0">
-                                        <h3
-                                            className="
+            <div className="min-w-0">
+                <h3
+                    className="
                         text-[13px]
                         font-bold
                         leading-tight
                         text-[#063968]
                         sm:text-[14px]
                     "
-                                        >
-                                            What is Homologation?
-                                        </h3>
+                >
+                    What is Homologation?
+                </h3>
 
-                                        <div className="mt-1 h-[2px] w-[115px] bg-[#E9A91F]" />
-                                    </div>
+                <div className="mt-1 h-[2px] w-[115px] bg-[#E9A91F]" />
+            </div>
 
-                                </div>
+        </div>
 
-                                {/* DESCRIPTION */}
-                                <p
-                                    className="
-                mt-3
+        {/* DESCRIPTION */}
+        <p
+            className="
+                mt-5
+                translate-y-2
                 w-full
                 max-w-full
                 break-words
                 text-[11px]
                 leading-[1.45rem]
                 text-[#17466f]
-
                 sm:text-[12px]
-                translate-y-4
             "
-                                >
-                                    Homologation is the certification process
-                                    that ensures a product complies with the
-                                    technical and regulatory requirements of
-                                    a country or region.
-                                </p>
+        >
+            Homologation is the certification process
+            that ensures a product complies with the
+            technical and regulatory requirements of
+            a country or region.
+        </p>
 
-                            </div>
-                        </div>
+    </div>
+</div>
 
 
                         {/* =================================================

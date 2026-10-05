@@ -405,7 +405,7 @@ const Navbar = () => {
     className="
         relative
         right-2
-        mt-3
+        translate-y-3
         flex
         h-[42px]
         w-[225px]
