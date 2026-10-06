@@ -207,16 +207,22 @@ const Footer = () => {
     className="
         grid
         w-full
-        grid-cols-3
-        gap-x-6
+        max-w-[320px]
+        mx-auto
+        grid-cols-2
+        place-items-center
+        gap-x-8
         gap-y-4
         text-center
 
+        sm:max-w-none
+        sm:mx-0
         sm:grid-cols-4
         sm:gap-x-8
 
         lg:flex
         lg:w-auto
+        lg:max-w-none
         lg:flex-wrap
         lg:items-center
         lg:justify-center
@@ -226,28 +232,33 @@ const Footer = () => {
         lg:translate-x-[105px]
     "
 >
-                                {navLinks.map((link) => (
-                                    <a
-    key={link.label}
-    href={link.href}
-    className="
-        text-center
-        text-[12px]
-        font-medium
-        text-white
+    {navLinks.map((link) => (
+        <a
+            key={link.label}
+            href={link.href}
+            className="
+                flex
+                w-full
+                justify-center
+                text-center
+                text-[12px]
+                font-medium
+                text-white
 
-        sm:text-[13px]
+                sm:text-[13px]
 
-        lg:transition-colors
-        lg:duration-200
-        lg:hover:text-[#E9A91F]
-    "
->
-    {link.label}
-</a>
-                                ))}
-                            </nav>
-
+                lg:w-auto
+                lg:block
+                lg:text-center
+                lg:transition-colors
+                lg:duration-200
+                lg:hover:text-[#E9A91F]
+            "
+        >
+            {link.label}
+        </a>
+    ))}
+</nav>
 
                             {/* =================================================
                                 SOCIAL ICONS
