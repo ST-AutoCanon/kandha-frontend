@@ -6,7 +6,7 @@ import aerospace from "../assets/aerospace.png";
 import defence from "../assets/defence.png";
 import energy from "../assets/enegyrenewable.png";
 import industrial from "../assets/industryprod.png";
-import consumer from "../assets/consumergoods.png";
+import consumer from "../assets/ConsumerGoods1.png";
 import ctaImage from "../assets/cta.png";
 import Footer from "../Components/footer";
 import { Link } from "react-router-dom";
