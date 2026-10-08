@@ -204,43 +204,30 @@ const Footer = () => {
                                 NAVIGATION
                             ================================================= */}
                             <nav
-    className="
-        grid
-        w-full
-        max-w-[320px]
+                                className="
         mx-auto
-        grid-cols-2
-        place-items-center
-        gap-x-8
+        grid
+        w-[180px]
+        grid-cols-[80px_100px]
         gap-y-4
-        text-center
-
-        sm:max-w-none
-        sm:mx-0
-        sm:grid-cols-4
-        sm:gap-x-8
 
         lg:flex
         lg:w-auto
-        lg:max-w-none
-        lg:flex-wrap
         lg:items-center
-        lg:justify-center
+        lg:justify-end
         lg:gap-x-8
         lg:gap-y-4
-        lg:justify-end
         lg:translate-x-[105px]
     "
->
-    {navLinks.map((link) => (
-        <a
-            key={link.label}
-            href={link.href}
-            className="
-                flex
+                            >
+                                {navLinks.map((link) => (
+                                    <a
+                                        key={link.label}
+                                        href={link.href}
+                                        className="
+                block
                 w-full
-                justify-center
-                text-center
+                text-left
                 text-[12px]
                 font-medium
                 text-white
@@ -248,18 +235,16 @@ const Footer = () => {
                 sm:text-[13px]
 
                 lg:w-auto
-                lg:block
                 lg:text-center
                 lg:transition-colors
                 lg:duration-200
                 lg:hover:text-[#E9A91F]
             "
-        >
-            {link.label}
-        </a>
-    ))}
-</nav>
-
+                                    >
+                                        {link.label}
+                                    </a>
+                                ))}
+                            </nav>
                             {/* =================================================
                                 SOCIAL ICONS
                             ================================================= */}
@@ -269,7 +254,7 @@ const Footer = () => {
                                     items-center
                                     justify-center
                                     gap-5
-                                    translate-x-0
+                                    -translate-x-4
 
                                     lg:translate-x-[-35px]
                                 "
@@ -353,8 +338,8 @@ const Footer = () => {
                         {/* =================================================
     DIVIDER
 ================================================= */}
-<div
-    className="
+                        <div
+                            className="
         relative top-6
         h-px
         w-full
@@ -362,21 +347,21 @@ const Footer = () => {
 
         lg:w-[calc(100%-20px)]
     "
-/>
+                        />
 
-{/* SPACE BETWEEN DIVIDER AND COPYRIGHT */}
-<div className="h-8 w-full" />
+                        {/* SPACE BETWEEN DIVIDER AND COPYRIGHT */}
+                        <div className="h-8 w-full" />
                     </div>
                 </div>
 
 
-               
-              
-{/* =====================================================
+
+
+                {/* =====================================================
     BOTTOM FOOTER
 ====================================================== */}
-<div
-    className="
+                <div
+                    className="
         flex
         flex-col
         items-center
@@ -391,10 +376,10 @@ const Footer = () => {
         md:items-center
         md:justify-between
     "
->
-    {/* COPYRIGHT */}
-    <p
-        className="
+                >
+                    {/* COPYRIGHT */}
+                    <p
+                        className="
             w-full
             text-center
             translate-x-0
@@ -404,18 +389,18 @@ const Footer = () => {
 
             lg:translate-x-[400px]
         "
-    >
-        © 2025 Kandha Engineering Tech Solutions.
-        <span className="hidden sm:inline"> </span>
-        <span className="sm:hidden">
-            <br />
-        </span>
-        All Rights Reserved.
-    </p>
+                    >
+                        © 2025 Kandha Engineering Tech Solutions.
+                        <span className="hidden sm:inline"> </span>
+                        <span className="sm:hidden">
+                            <br />
+                        </span>
+                        All Rights Reserved.
+                    </p>
 
-    {/* BOTTOM LINKS */}
-    <div
-        className="
+                    {/* BOTTOM LINKS */}
+                    <div
+                        className="
             flex
             flex-wrap
             items-center
@@ -428,48 +413,48 @@ const Footer = () => {
             lg:gap-4
             lg:translate-x-[-20px]
         "
-    >
-        <a
-            href="/privacy-policy"
-            className="
+                    >
+                        <a
+                            href="/privacy-policy"
+                            className="
                 text-[10px]
                 sm:text-[11px]
                 lg:transition-colors
                 lg:hover:text-[#E9A91F]
             "
-        >
-            Privacy Policy
-        </a>
+                        >
+                            Privacy Policy
+                        </a>
 
-        <span className="text-white/40">|</span>
+                        <span className="text-white/40">|</span>
 
-        <a
-            href="/terms-of-use"
-            className="
+                        <a
+                            href="/terms-of-use"
+                            className="
                 text-[10px]
                 sm:text-[11px]
                 lg:transition-colors
                 lg:hover:text-[#E9A91F]
             "
-        >
-            Terms of Use
-        </a>
+                        >
+                            Terms of Use
+                        </a>
 
-        <span className="text-white/40">|</span>
+                        <span className="text-white/40">|</span>
 
-        <a
-            href="/sitemap"
-            className="
+                        <a
+                            href="/sitemap"
+                            className="
                 text-[10px]
                 sm:text-[11px]
                 lg:transition-colors
                 lg:hover:text-[#E9A91F]
             "
-        >
-            Sitemap
-        </a>
-    </div>
-</div>
+                        >
+                            Sitemap
+                        </a>
+                    </div>
+                </div>
 
 
                 {/* Bottom gap */}
